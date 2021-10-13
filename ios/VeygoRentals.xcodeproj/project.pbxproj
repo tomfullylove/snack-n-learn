@@ -12,6 +12,17 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1AED6DA4DA802105E9351C62 /* libPods-VeygoRentals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8687D49FA9E37E80684F9D /* libPods-VeygoRentals.a */; };
+		3561A3D62717A40500834C3F /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3CB2717A40500834C3F /* Lato-Italic.ttf */; };
+		3561A3D72717A40500834C3F /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3CC2717A40500834C3F /* Quicksand-Bold.ttf */; };
+		3561A3D82717A40500834C3F /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3CD2717A40500834C3F /* Lato-Thin.ttf */; };
+		3561A3D92717A40500834C3F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3CE2717A40500834C3F /* Lato-Bold.ttf */; };
+		3561A3DA2717A40500834C3F /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3CF2717A40500834C3F /* Lato-Black.ttf */; };
+		3561A3DB2717A40500834C3F /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D02717A40500834C3F /* Lato-Regular.ttf */; };
+		3561A3DC2717A40500834C3F /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D12717A40500834C3F /* Quicksand-Medium.ttf */; };
+		3561A3DD2717A40500834C3F /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D22717A40500834C3F /* Quicksand-Regular.ttf */; };
+		3561A3DE2717A40500834C3F /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D32717A40500834C3F /* Quicksand-SemiBold.ttf */; };
+		3561A3DF2717A40500834C3F /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D42717A40500834C3F /* Quicksand-Light.ttf */; };
+		3561A3E02717A40500834C3F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D52717A40500834C3F /* Lato-Light.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A1EB41279B3557207B72E7E6 /* libPods-VeygoRentals-VeygoRentalsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2F77CC7AB58E1FB34CBC33 /* libPods-VeygoRentals-VeygoRentalsTests.a */; };
 /* End PBXBuildFile section */
@@ -54,6 +65,17 @@
 		3501CE47271708CF0065B17B /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		3501CE48271708CF0065B17B /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		3501CE49271708CF0065B17B /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		3561A3CB2717A40500834C3F /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		3561A3CC2717A40500834C3F /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		3561A3CD2717A40500834C3F /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		3561A3CE2717A40500834C3F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		3561A3CF2717A40500834C3F /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		3561A3D02717A40500834C3F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		3561A3D12717A40500834C3F /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		3561A3D22717A40500834C3F /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		3561A3D32717A40500834C3F /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		3561A3D42717A40500834C3F /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		3561A3D52717A40500834C3F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
 		73E49027114F91AFFB44E3BC /* Pods-VeygoRentals-VeygoRentalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeygoRentals-VeygoRentalsTests.debug.xcconfig"; path = "Target Support Files/Pods-VeygoRentals-VeygoRentalsTests/Pods-VeygoRentals-VeygoRentalsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = VeygoRentals/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88EB687532661E9B8088CB78 /* Pods-VeygoRentals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeygoRentals.release.xcconfig"; path = "Target Support Files/Pods-VeygoRentals/Pods-VeygoRentals.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +168,25 @@
 			path = "../node_modules/react-native-vector-icons/Fonts";
 			sourceTree = "<group>";
 		};
+		3561A3CA2717A40500834C3F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3561A3CB2717A40500834C3F /* Lato-Italic.ttf */,
+				3561A3CC2717A40500834C3F /* Quicksand-Bold.ttf */,
+				3561A3CD2717A40500834C3F /* Lato-Thin.ttf */,
+				3561A3CE2717A40500834C3F /* Lato-Bold.ttf */,
+				3561A3CF2717A40500834C3F /* Lato-Black.ttf */,
+				3561A3D02717A40500834C3F /* Lato-Regular.ttf */,
+				3561A3D12717A40500834C3F /* Quicksand-Medium.ttf */,
+				3561A3D22717A40500834C3F /* Quicksand-Regular.ttf */,
+				3561A3D32717A40500834C3F /* Quicksand-SemiBold.ttf */,
+				3561A3D42717A40500834C3F /* Quicksand-Light.ttf */,
+				3561A3D52717A40500834C3F /* Lato-Light.ttf */,
+			);
+			name = fonts;
+			path = ../fonts;
+			sourceTree = "<group>";
+		};
 		3692E40347CF5CD3D8CE403D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +208,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				3561A3CA2717A40500834C3F /* fonts */,
 				3501CE39271708CF0065B17B /* Fonts */,
 				13B07FAE1A68108700A75B9A /* VeygoRentals */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -283,8 +325,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3561A3DA2717A40500834C3F /* Lato-Black.ttf in Resources */,
+				3561A3E02717A40500834C3F /* Lato-Light.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				3561A3DC2717A40500834C3F /* Quicksand-Medium.ttf in Resources */,
+				3561A3DF2717A40500834C3F /* Quicksand-Light.ttf in Resources */,
+				3561A3D92717A40500834C3F /* Lato-Bold.ttf in Resources */,
+				3561A3DB2717A40500834C3F /* Lato-Regular.ttf in Resources */,
+				3561A3D62717A40500834C3F /* Lato-Italic.ttf in Resources */,
+				3561A3D82717A40500834C3F /* Lato-Thin.ttf in Resources */,
+				3561A3DE2717A40500834C3F /* Quicksand-SemiBold.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3561A3D72717A40500834C3F /* Quicksand-Bold.ttf in Resources */,
+				3561A3DD2717A40500834C3F /* Quicksand-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

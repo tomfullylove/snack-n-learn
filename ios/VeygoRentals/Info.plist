@@ -52,6 +52,16 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Ionicons.ttf</string>
+		<string>Quicksand-Bold.ttf</string>
+		<string>Quicksand-SemiBold.ttf</string>
+		<string>Quicksand-Medium.ttf</string>
+		<string>Quicksand-Regular.ttf</string>
+		<string>Quicksand-Light.ttf</string>
+		<string>Lato-Black.ttf</string>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-Regular.ttf</string>
+		<string>Lato-Light.ttf</string>
+		<string>Lato-Thin.ttf</string>
 	</array>
 </dict>
 </plist>
