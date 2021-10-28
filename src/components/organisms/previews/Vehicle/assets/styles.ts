@@ -1,15 +1,14 @@
 import Styled from 'styled-components/native';
-import {Pressable} from 'react-native';
 
 import colors from '../../../../../utils/colors';
 
-export const Container = Styled(Pressable)`
+export const Container = Styled.Pressable`
   background-color: ${colors.background.main};
   shadow-color: ${colors.text.faint};
   shadow-offset: 0px 3px;
   shadow-opacity: 0.2;
   margin-bottom: 6px;
-  aspectRatio: 2;
+  aspectRatio: 1.8;
   width: 248px;
   border-radius: 8px;
 
@@ -20,7 +19,11 @@ export const Container = Styled(Pressable)`
 
 export const Image = Styled.Image`
   width: 120px;
-  height: 110px;
+  height: 120px;
   resizeMode: contain;
   margin-left: 8px;
+`;
+
+export const Text = Styled.Text`
+
 `;

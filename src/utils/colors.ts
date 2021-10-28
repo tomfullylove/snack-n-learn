@@ -5,7 +5,8 @@ export default {
   },
   text: {
     main: '#1a1816',
-    sub: '#524e4b',
+    sub: '#707070',
     faint: '#b5b4b3',
   },
+  main: '#007FFF',
 };

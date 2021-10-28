@@ -1,14 +1,25 @@
 import React, {useRef, useState} from 'react';
 import MapView, {Marker} from 'react-native-maps';
+import {useNavigation} from '@react-navigation/native';
 
+import InputDisplay from '../../components/molecules/InputDisplay';
+import Button from '../../components/atoms/Button';
 import MapMarker from '../../components/atoms/MapMarker';
 import VehicleList from '../../components/organisms/lists/Vehicles';
 
-import {Container, BottomContainer} from './assets/styles';
+import {
+  Container,
+  TopContainer,
+  Spacer,
+  BottomContainer,
+  LocationContainer,
+} from './assets/styles';
 
 import {Props} from './Screen.container';
 
 const Map: React.FC<Props> = ({availableVehicles}) => {
+  const {navigate} = useNavigation();
+
   const [focusedVehicle, setfocusedVehicle] = useState(availableVehicles[0]);
 
   const mapRef = useRef(null);
@@ -55,7 +66,25 @@ const Map: React.FC<Props> = ({availableVehicles}) => {
           </Marker>
         ))}
       </MapView>
+      <TopContainer>
+        <InputDisplay
+          icon="time-outline"
+          text="5pm - 7pm"
+          subtext="Today"
+          onPress={(): void => {}}
+        />
+        <Spacer />
+        <Button onPress={() => navigate('Filters')} text="Filters" />
+      </TopContainer>
       <BottomContainer>
+        <LocationContainer>
+          <InputDisplay
+            icon="earth-outline"
+            text="3 km"
+            subtext="Ninian Road"
+            onPress={(): void => {}}
+          />
+        </LocationContainer>
         <VehicleList
           listRef={vehicleListRef}
           vehicles={availableVehicles}

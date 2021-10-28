@@ -11,7 +11,7 @@ const Preview: React.FC<Props> = ({vehicle}) => {
   const {navigate} = useNavigation();
 
   return (
-    <Container onPress={() => navigate('Refine')}>
+    <Container onPress={() => navigate('Vehicle')}>
       <Image source={vehicle.image} />
     </Container>
   );
