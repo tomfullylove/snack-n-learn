@@ -1,1 +1,1 @@
-export {default} from './Navigator.component';
+export {default} from './Navigator';

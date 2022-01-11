@@ -1,8 +1,8 @@
 import React from 'react';
 import {Provider} from 'react-redux';
 
-import store from './state';
-import RootNavigator from './navigation/RootNavigator';
+import store from '@state/state';
+import RootNavigator from '@navigation/RootNavigator';
 
 const App: React.FC = () => {
   return (

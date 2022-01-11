@@ -1,11 +1,10 @@
 import {configureStore} from '@reduxjs/toolkit';
 
-import {configReducer, vehiclesReducer} from './features';
+import {configReducer} from '@state/features';
 
 const store = configureStore({
   reducer: {
     config: configReducer,
-    vehicles: vehiclesReducer,
   },
 });
 
