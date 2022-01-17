@@ -2,7 +2,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 
 import store from '@state/state';
-import RootNavigator from '@navigation/RootNavigator';
+import RootNavigator from '@navigation';
 
 const App: React.FC = () => {
   return (

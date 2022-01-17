@@ -1,7 +1,7 @@
 export default {
   background: {
     main: '#fcfcfc',
-    sub: '#ebebeb',
+    sub: '#f7f7f7',
   },
   text: {
     main: '#1a1816',
@@ -9,4 +9,5 @@ export default {
     faint: '#b5b4b3',
   },
   main: '#007FFF',
+  shadow: 'rgba(0, 0, 0, 0.05)',
 };

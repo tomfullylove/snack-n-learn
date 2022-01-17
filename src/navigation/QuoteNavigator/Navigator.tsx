@@ -4,7 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import fonts from '@utils/fonts';
 import colors from '@utils/colors';
 
-import {Dashboard} from '@components/screens';
+import {Quote} from '@components/screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,8 +16,8 @@ const Navigator: React.FC = () => {
         headerStyle: {backgroundColor: colors.background.sub},
       }}>
       <Stack.Screen
-        name="Dashboard"
-        component={Dashboard}
+        name="Get insured"
+        component={Quote}
         options={{
           headerLargeTitle: false,
           headerLargeTitleStyle: {
