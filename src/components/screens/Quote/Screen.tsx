@@ -1,40 +1,57 @@
-import React from 'react';
-import {StyleSheet} from 'react-native';
+import React, {useState} from 'react';
 import Styled from 'styled-components/native';
 
 import SegmentedControl from '@react-native-segmented-control/segmented-control';
-import CardFlip from 'react-native-card-flip';
 
 import colors from '@utils/colors';
 import fonts from '@utils/fonts';
 
-import {Card} from '@components/atoms';
+import {
+  ProductCards,
+  CarInfoCard,
+  PersonalInfoCard,
+  LicenceTypeCard,
+} from '@components/molecules';
 
 const OptionsContainer = Styled.View`
-  padding: 0 24px;
+  padding: 8px 24px;
   background-color: ${colors.background.sub};
 `;
 
 const Container = Styled.ScrollView.attrs({
   contentContainerStyle: {
-    paddingTop: 40,
+    paddingTop: 24,
     paddingRight: 24,
     paddingLeft: 24,
+    paddingBottom: 24,
   },
 })`
   display: flex;
   background-color: ${colors.background.sub};
 `;
 
-const ProductCard = Styled(Card)`
-  height: 200px;
+const SubTitleContainer = Styled.View`
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0 24px;
+`;
+
+const SubTitle = Styled.Text`
+  color: ${colors.text.main};
+  font-family: ${fonts.main.bold};
+  font-size: 16px;
+  margin-bottom: 6px;
+`;
+
+const Text = Styled.Text`
+  color: ${colors.text.main};
+  font-family: ${fonts.main.regular};
+  font-size: 13px;
 `;
 
 const Spacer = Styled.View`
-  height: 40px;
+  height: 32px;
 `;
-
-const Text = Styled.Text``;
 
 const Screen: React.FC = () => {
   return (
@@ -47,29 +64,29 @@ const Screen: React.FC = () => {
             color: colors.text.main,
             fontFamily: fonts.main.semiBold,
           }}
-          onChange={() => this.card.flip()}
+          onChange={() => this.productCard.flip()}
         />
       </OptionsContainer>
       <Container>
-        <CardFlip style={styles.cardContainer} ref={card => (this.card = card)}>
-          <ProductCard>
-            <Text>Short-term</Text>
-          </ProductCard>
-          <ProductCard>
-            <Text>Subscription</Text>
-          </ProductCard>
-        </CardFlip>
+        <ProductCards />
+        <SubTitleContainer>
+          <SubTitle>Car details</SubTitle>
+          <Text>Mixtape tousled celiac af gastropub.</Text>
+        </SubTitleContainer>
+        <CarInfoCard />
+        <SubTitleContainer>
+          <SubTitle>Your details</SubTitle>
+          <Text>
+            Everyday carry kombucha fashion axe cliche shabby chic. Slow-carb
+            pour-over jean shorts
+          </Text>
+        </SubTitleContainer>
+        <PersonalInfoCard />
         <Spacer />
-        <Card />
+        <LicenceTypeCard />
       </Container>
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  cardContainer: {
-    height: 200,
-  },
-});
 
 export default Screen;
