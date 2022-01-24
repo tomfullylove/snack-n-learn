@@ -4,17 +4,27 @@ import Styled from 'styled-components/native';
 import colors from '@utils/colors';
 import fonts from '@utils/fonts';
 
+interface ContainerProps {
+  horizontal: boolean;
+}
+
 interface CardProps {
-  marginBottom: boolean;
+  margin: boolean;
+  horizontal: boolean;
+}
+
+interface TextProps {
+  slected: boolean;
 }
 
 interface CircleProps {
   fill: boolean;
 }
 
-const Container = Styled.View`
+const Container = Styled.View<ContainerProps>`
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-direction: ${({horizontal}) => (horizontal ? 'row' : 'column')};
 `;
 
 const Card = Styled.Pressable<CardProps>`
@@ -30,14 +40,16 @@ const Card = Styled.Pressable<CardProps>`
   shadow-offset: 0px 2px;
   shadow-opacity: 1;
 
-  ${({marginBottom}) => marginBottom && 'margin-bottom: 16px;'}
+  ${({horizontal}) => horizontal && 'flex: 1;'}
+  ${({margin, horizontal}) =>
+    margin && `margin-${horizontal ? 'right' : 'bottom'}: 16px;`}
 
   ${({fill}) => fill && `background-color: ${colors.background.success}`}
 `;
 
-const Text = Styled.Text`
-  color: ${colors.text.main};
-  font-family: ${fonts.main.semiBold};
+const Text = Styled.Text<TextProps>`
+  color: ${({selected}) => (selected ? colors.text.success : colors.text.main)};
+  font-family: ${fonts.main.bold};
   font-size: 14px;
 `;
 
@@ -59,18 +71,20 @@ interface Props {
   items: Array<SelectorItem>;
   value: string;
   onPress: any;
+  horizontal?: boolean;
 }
 
-const Selector: React.FC<Props> = ({items, value, onPress}) => {
+const Selector: React.FC<Props> = ({items, value, onPress, horizontal}) => {
   return (
-    <Container>
+    <Container horizontal={horizontal}>
       {items.map((item: SelectorItem, index: number) => (
         <Card
+          horizontal={horizontal}
           key={`selector-item-${item.id}`}
-          marginBottom={index !== items.length - 1}
+          margin={index !== items.length - 1}
           fill={item.id === value}
           onPress={() => onPress(item.id)}>
-          <Text>{item.label}</Text>
+          <Text selected={item.id === value}>{item.label}</Text>
           <Circle fill={item.id === value} />
         </Card>
       ))}

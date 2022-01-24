@@ -1,6 +1,5 @@
 import React from 'react';
 import Styled from 'styled-components/native';
-import {useNavigation} from '@react-navigation/native';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -8,6 +7,12 @@ import colors from '@utils/colors';
 import fonts from '@utils/fonts';
 
 import {Card, Button} from '@components/atoms';
+
+const Container = Styled.View`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
 
 const TitleContainer = Styled.View`
   display: flex;
@@ -17,9 +22,9 @@ const TitleContainer = Styled.View`
 `;
 
 const Icon = Styled(Ionicons).attrs({
-  name: 'car',
+  name: 'calendar',
   color: colors.text.faint,
-  size: 28,
+  size: 24,
 })`
   margin-right: 8px;
 `;
@@ -30,17 +35,20 @@ const Title = Styled.Text`
   font-size: 16px;
 `;
 
-const PersonalInfoCard: React.FC = () => {
-  const navigation = useNavigation();
+const EndDateCard: React.FC = () => {
   return (
-    <Card onPress={() => navigation.navigate('CarInfo')}>
-      <TitleContainer>
-        <Icon />
-        <Title>Car info</Title>
-      </TitleContainer>
-      <Button text="Add car" onPress={() => navigation.navigate('CarInfo')} />
-    </Card>
+    <>
+      <Card>
+        <Container>
+          <TitleContainer>
+            <Icon />
+            <Title>End date</Title>
+          </TitleContainer>
+          <Button text="Pick date" />
+        </Container>
+      </Card>
+    </>
   );
 };
 
-export default PersonalInfoCard;
+export default EndDateCard;

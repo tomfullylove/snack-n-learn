@@ -4,9 +4,9 @@ import {NavigationContainer} from '@react-navigation/native';
 
 import {TabNavigator} from '@navigation';
 
-const Stack = createStackNavigator();
+import {PersonalInfo, CarInfo} from '@components/modals';
 
-const Modal: React.FC = () => <></>;
+const Stack = createStackNavigator();
 
 const Navigator: React.FC = () => {
   return (
@@ -14,7 +14,8 @@ const Navigator: React.FC = () => {
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Tab" component={TabNavigator} />
         <Stack.Group screenOptions={{presentation: 'modal'}}>
-          <Stack.Screen name="Filters" component={Modal} />
+          <Stack.Screen name="PersonalInfo" component={PersonalInfo} />
+          <Stack.Screen name="CarInfo" component={CarInfo} />
         </Stack.Group>
       </Stack.Navigator>
     </NavigationContainer>

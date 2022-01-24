@@ -13,8 +13,8 @@ import {Card, Button} from '@components/atoms';
 import {Selector} from '@components/molecules';
 
 const licenceTypes = [
-  {id: 'ukp', label: 'Provisional GB Licence'},
-  {id: 'ukm', label: 'Full GB Licence'},
+  {id: 'ukp', label: 'Provisional GB'},
+  {id: 'ukm', label: 'Full GB'},
 ];
 
 const Wrapper = Styled.View`
@@ -30,10 +30,6 @@ const Title = Styled.Text`
   font-family: ${fonts.main.bold};
   font-size: 16px;
   margin-bottom: 16px;
-`;
-
-const Spacer = Styled.View`
-  height: 24px;
 `;
 
 const SelectorCard = Styled.Pressable`
@@ -61,7 +57,7 @@ const SelectorContainer = Styled.View`
 
 const Text = Styled.Text`
   color: ${colors.text.main};
-  font-family: ${fonts.main.semiBold};
+  font-family: ${fonts.main.bold};
   font-size: 14px;
 `;
 
@@ -84,7 +80,7 @@ const Label = Styled.View`
 
 const LabelText = Styled.Text`
   color: ${colors.background.main};
-  font-family: ${fonts.main.semiBold};
+  font-family: ${fonts.main.bold};
   font-size: 10px;
 `;
 

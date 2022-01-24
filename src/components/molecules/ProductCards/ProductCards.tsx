@@ -7,8 +7,6 @@ import CardFlip from 'react-native-card-flip';
 import colors from '@utils/colors';
 import fonts from '@utils/fonts';
 
-import {Button} from '@components/atoms';
-
 const Card = Styled.ImageBackground`
   display: flex;
   flex-direction: column;
@@ -22,7 +20,7 @@ const Card = Styled.ImageBackground`
   shadow-offset: 0px 2px;
   shadow-opacity: 1;
 
-  height: 200px;
+  height: 150px;
 `;
 
 const InfoContainer = Styled.View`
@@ -58,7 +56,6 @@ const ProductCards: React.FC = () => {
             dreamcatcher heirloom green
           </Text>
         </InfoContainer>
-        <Button text="Pick a duration" />
       </Card>
       <Card source={require('@assets/background-1.png')}>
         <InfoContainer>
@@ -75,7 +72,7 @@ const ProductCards: React.FC = () => {
 
 const styles = StyleSheet.create({
   cardContainer: {
-    height: 200,
+    height: 150,
   },
 });
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components/native';
+import {useNavigation} from '@react-navigation/native';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -18,11 +19,11 @@ const TitleContainer = Styled.View`
 `;
 
 const Icon = Styled(Ionicons).attrs({
-  name: 'person-outline',
+  name: 'person',
   color: colors.text.faint,
   size: 24,
 })`
-  margin-right: 4px;
+  margin-right: 8px;
 `;
 
 const Title = Styled.Text`
@@ -47,8 +48,9 @@ const Text = Styled.Text`
 `;
 
 const PersonalInfoCard: React.FC = () => {
+  const navigation = useNavigation();
   return (
-    <Card>
+    <Card onPress={() => navigation.navigate('PersonalInfo')}>
       <TitleContainer>
         <Icon />
         <Title>Personal info</Title>
@@ -57,7 +59,10 @@ const PersonalInfoCard: React.FC = () => {
       <Text>
         Chillwave coloring book VHS, retro taxidermy glossier live-edge
       </Text>
-      <Button text="Add your info" />
+      <Button
+        text="Add your info"
+        onPress={() => navigation.navigate('PersonalInfo')}
+      />
     </Card>
   );
 };
