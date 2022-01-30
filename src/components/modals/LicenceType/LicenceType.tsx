@@ -93,7 +93,6 @@ const LicenceType: React.FC<Props> = ({show, close}) => {
   const [selectorValue, setSelectorValue] = useState(licenceTypes[1].id);
   return (
     <Modal
-      propagateSwipe
       isVisible={show}
       style={styles.modal}
       swipeDirection="down"

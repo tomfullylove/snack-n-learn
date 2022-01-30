@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Styled from 'styled-components/native';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -7,6 +7,8 @@ import colors from '@utils/colors';
 import fonts from '@utils/fonts';
 
 import {Card, Button} from '@components/atoms';
+
+import {EndDate} from '@components/modals';
 
 const Container = Styled.View`
   display: flex;
@@ -36,6 +38,7 @@ const Title = Styled.Text`
 `;
 
 const EndDateCard: React.FC = () => {
+  const [showEndDateModal, toggleEndDateModal] = useState(false);
   return (
     <>
       <Card>
@@ -44,9 +47,13 @@ const EndDateCard: React.FC = () => {
             <Icon />
             <Title>End date</Title>
           </TitleContainer>
-          <Button text="Pick date" />
+          <Button text="Pick date" onPress={() => toggleEndDateModal(true)} />
         </Container>
       </Card>
+      <EndDate
+        show={showEndDateModal}
+        close={() => toggleEndDateModal(false)}
+      />
     </>
   );
 };

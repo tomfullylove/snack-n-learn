@@ -35,7 +35,6 @@ const ContentContainer = Styled.ScrollView.attrs({
   },
 })`
   display: flex;
-  flex-grow: 1;
   background-color: ${colors.background.sub};
 `;
 
@@ -120,9 +119,9 @@ const Screen: React.FC = () => {
             pour-over jean shorts
           </Text>
         </SubTitleContainer>
-        <PersonalInfoCard />
-        <Spacer />
         <LicenceTypeCard />
+        <Spacer />
+        <PersonalInfoCard />
       </ContentContainer>
       <BottomContainer>
         <Button text="Next" />
