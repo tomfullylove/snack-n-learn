@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {requireNativeComponent, StyleSheet} from 'react-native';
 import Styled from 'styled-components/native';
 
 import Modal from 'react-native-modal';
@@ -8,6 +8,8 @@ import colors from '@utils/colors';
 import fonts from '@utils/fonts';
 
 import {Card, Button} from '@components/atoms';
+
+const SwiftUIButton = requireNativeComponent('SwiftUIButton');
 
 const Wrapper = Styled.View`
   display: flex;
@@ -39,6 +41,7 @@ const EndDate: React.FC<Props> = ({show, close}) => {
       <Wrapper>
         <Card>
           <Title>When do you want your insurance to end?</Title>
+          <SwiftUIButton style={styles.container} />
           <Button text="Continue" onPress={close} />
         </Card>
       </Wrapper>
@@ -51,6 +54,11 @@ const styles = StyleSheet.create({
     marginBottom: 0,
     marginLeft: 0,
     marginRight: 0,
+  },
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 

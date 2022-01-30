@@ -23,6 +23,9 @@
 		3561A3DE2717A40500834C3F /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D32717A40500834C3F /* Quicksand-SemiBold.ttf */; };
 		3561A3DF2717A40500834C3F /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D42717A40500834C3F /* Quicksand-Light.ttf */; };
 		3561A3E02717A40500834C3F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D52717A40500834C3F /* Lato-Light.ttf */; };
+		35B7755E27A6EE0B00A088DB /* SwiftUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7755D27A6EE0B00A088DB /* SwiftUIButton.swift */; };
+		35B7756227A6EE4800A088DB /* SwiftUIButtonProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7756127A6EE4800A088DB /* SwiftUIButtonProxy.swift */; };
+		35B7756627A6EE7E00A088DB /* SwiftUIButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7756527A6EE7E00A088DB /* SwiftUIButtonManager.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A1EB41279B3557207B72E7E6 /* libPods-Veygo-VeygoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2F77CC7AB58E1FB34CBC33 /* libPods-Veygo-VeygoTests.a */; };
 /* End PBXBuildFile section */
@@ -76,6 +79,10 @@
 		3561A3D32717A40500834C3F /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		3561A3D42717A40500834C3F /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		3561A3D52717A40500834C3F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		35B7754627A6D57B00A088DB /* Veygo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Veygo-Bridging-Header.h"; sourceTree = "<group>"; };
+		35B7755D27A6EE0B00A088DB /* SwiftUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIButton.swift; sourceTree = "<group>"; };
+		35B7756127A6EE4800A088DB /* SwiftUIButtonProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIButtonProxy.swift; sourceTree = "<group>"; };
+		35B7756527A6EE7E00A088DB /* SwiftUIButtonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftUIButtonManager.m; sourceTree = "<group>"; };
 		73E49027114F91AFFB44E3BC /* Pods-Veygo-VeygoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veygo-VeygoTests.debug.xcconfig"; path = "Target Support Files/Pods-Veygo-VeygoTests/Pods-Veygo-VeygoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Veygo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88EB687532661E9B8088CB78 /* Pods-Veygo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veygo.release.xcconfig"; path = "Target Support Files/Pods-Veygo/Pods-Veygo.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +194,17 @@
 			path = ../fonts;
 			sourceTree = "<group>";
 		};
+		35B7754527A6D52900A088DB /* NativeModules */ = {
+			isa = PBXGroup;
+			children = (
+				35B7754627A6D57B00A088DB /* Veygo-Bridging-Header.h */,
+				35B7755D27A6EE0B00A088DB /* SwiftUIButton.swift */,
+				35B7756127A6EE4800A088DB /* SwiftUIButtonProxy.swift */,
+				35B7756527A6EE7E00A088DB /* SwiftUIButtonManager.m */,
+			);
+			path = NativeModules;
+			sourceTree = "<group>";
+		};
 		3692E40347CF5CD3D8CE403D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +226,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				35B7754527A6D52900A088DB /* NativeModules */,
 				3561A3CA2717A40500834C3F /* fonts */,
 				3501CE39271708CF0065B17B /* Fonts */,
 				13B07FAE1A68108700A75B9A /* Veygo */,
@@ -290,7 +309,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -504,7 +523,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B7756227A6EE4800A088DB /* SwiftUIButtonProxy.swift in Sources */,
+				35B7755E27A6EE0B00A088DB /* SwiftUIButton.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				35B7756627A6EE7E00A088DB /* SwiftUIButtonManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,13 +546,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73E49027114F91AFFB44E3BC /* Pods-Veygo-VeygoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = VeygoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -551,10 +574,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21B2D2557B56A45377688755 /* Pods-Veygo-VeygoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = VeygoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,6 +615,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Veygo;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeModules/Veygo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -616,6 +641,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Veygo;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeModules/Veygo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -670,7 +696,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -729,7 +755,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
