@@ -23,9 +23,9 @@
 		3561A3DE2717A40500834C3F /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D32717A40500834C3F /* Quicksand-SemiBold.ttf */; };
 		3561A3DF2717A40500834C3F /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D42717A40500834C3F /* Quicksand-Light.ttf */; };
 		3561A3E02717A40500834C3F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3561A3D52717A40500834C3F /* Lato-Light.ttf */; };
-		35B7755E27A6EE0B00A088DB /* SwiftUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7755D27A6EE0B00A088DB /* SwiftUIButton.swift */; };
-		35B7756227A6EE4800A088DB /* SwiftUIButtonProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7756127A6EE4800A088DB /* SwiftUIButtonProxy.swift */; };
-		35B7756627A6EE7E00A088DB /* SwiftUIButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7756527A6EE7E00A088DB /* SwiftUIButtonManager.m */; };
+		35B7755E27A6EE0B00A088DB /* SwiftUIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7755D27A6EE0B00A088DB /* SwiftUIDatePicker.swift */; };
+		35B7756227A6EE4800A088DB /* SwiftUIDatePickerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7756127A6EE4800A088DB /* SwiftUIDatePickerProxy.swift */; };
+		35B7756627A6EE7E00A088DB /* SwiftUIDatePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7756527A6EE7E00A088DB /* SwiftUIDatePickerManager.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A1EB41279B3557207B72E7E6 /* libPods-Veygo-VeygoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2F77CC7AB58E1FB34CBC33 /* libPods-Veygo-VeygoTests.a */; };
 /* End PBXBuildFile section */
@@ -80,9 +80,9 @@
 		3561A3D42717A40500834C3F /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		3561A3D52717A40500834C3F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
 		35B7754627A6D57B00A088DB /* Veygo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Veygo-Bridging-Header.h"; sourceTree = "<group>"; };
-		35B7755D27A6EE0B00A088DB /* SwiftUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIButton.swift; sourceTree = "<group>"; };
-		35B7756127A6EE4800A088DB /* SwiftUIButtonProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIButtonProxy.swift; sourceTree = "<group>"; };
-		35B7756527A6EE7E00A088DB /* SwiftUIButtonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftUIButtonManager.m; sourceTree = "<group>"; };
+		35B7755D27A6EE0B00A088DB /* SwiftUIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDatePicker.swift; sourceTree = "<group>"; };
+		35B7756127A6EE4800A088DB /* SwiftUIDatePickerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDatePickerProxy.swift; sourceTree = "<group>"; };
+		35B7756527A6EE7E00A088DB /* SwiftUIDatePickerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftUIDatePickerManager.m; sourceTree = "<group>"; };
 		73E49027114F91AFFB44E3BC /* Pods-Veygo-VeygoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veygo-VeygoTests.debug.xcconfig"; path = "Target Support Files/Pods-Veygo-VeygoTests/Pods-Veygo-VeygoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Veygo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88EB687532661E9B8088CB78 /* Pods-Veygo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veygo.release.xcconfig"; path = "Target Support Files/Pods-Veygo/Pods-Veygo.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,9 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				35B7754627A6D57B00A088DB /* Veygo-Bridging-Header.h */,
-				35B7755D27A6EE0B00A088DB /* SwiftUIButton.swift */,
-				35B7756127A6EE4800A088DB /* SwiftUIButtonProxy.swift */,
-				35B7756527A6EE7E00A088DB /* SwiftUIButtonManager.m */,
+				35B7755D27A6EE0B00A088DB /* SwiftUIDatePicker.swift */,
+				35B7756127A6EE4800A088DB /* SwiftUIDatePickerProxy.swift */,
+				35B7756527A6EE7E00A088DB /* SwiftUIDatePickerManager.m */,
 			);
 			path = NativeModules;
 			sourceTree = "<group>";
@@ -523,10 +523,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35B7756227A6EE4800A088DB /* SwiftUIButtonProxy.swift in Sources */,
-				35B7755E27A6EE0B00A088DB /* SwiftUIButton.swift in Sources */,
+				35B7756227A6EE4800A088DB /* SwiftUIDatePickerProxy.swift in Sources */,
+				35B7755E27A6EE0B00A088DB /* SwiftUIDatePicker.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				35B7756627A6EE7E00A088DB /* SwiftUIButtonManager.m in Sources */,
+				35B7756627A6EE7E00A088DB /* SwiftUIDatePickerManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,7 +553,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = VeygoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,7 +578,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = VeygoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -696,7 +696,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -755,7 +755,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",

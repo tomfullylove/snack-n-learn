@@ -1,5 +1,5 @@
 //
-//  SwiftUIButtonManager.m
+//  SwiftUIDatePickerManager.m
 //  Veygo
 //
 //  Created by Tom Fullylove on 30/01/2022.
@@ -10,17 +10,17 @@
 #import "React/RCTComponentEvent.h"
 #import "Veygo-Swift.h"
 
-@interface SwiftUIButtonManager : RCTViewManager
+@interface SwiftUIDatePickerManager : RCTViewManager
 @end
 
-@implementation SwiftUIButtonManager
+@implementation SwiftUIDatePickerManager
 
 RCT_EXPORT_MODULE()
 
 - (UIView *)view {
-  SwiftUIButtonProxy *proxy = [[SwiftUIButtonProxy alloc] init];
+  SwiftUIDatePickerProxy *proxy = [[SwiftUIDatePickerProxy alloc] init];
   UIView *view = [proxy view];
-  NSMutableDictionary *storage = [SwiftUIButtonProxy storage];
+  NSMutableDictionary *storage = [SwiftUIDatePickerProxy storage];
   storage[[NSValue valueWithNonretainedObject:view]] = proxy;
   return view;
 }

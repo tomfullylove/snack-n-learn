@@ -4,12 +4,9 @@ import Styled from 'styled-components/native';
 
 import Modal from 'react-native-modal';
 
-import colors from '@utils/colors';
-import fonts from '@utils/fonts';
-
 import {Card, Button} from '@components/atoms';
 
-const SwiftUIButton = requireNativeComponent('SwiftUIButton');
+const SwiftUIDatePicker = requireNativeComponent('SwiftUIDatePicker');
 
 const Wrapper = Styled.View`
   display: flex;
@@ -19,11 +16,9 @@ const Wrapper = Styled.View`
   padding: 24px;
 `;
 
-const Title = Styled.Text`
-  color: ${colors.text.main};
-  font-family: ${fonts.main.bold};
-  font-size: 16px;
-  margin-bottom: 16px;
+const CalenderContainer = Styled.View`
+  height: 390px;
+  margin: -20px 0 -30px;
 `;
 
 interface Props {
@@ -40,9 +35,11 @@ const EndDate: React.FC<Props> = ({show, close}) => {
       onSwipeComplete={close}>
       <Wrapper>
         <Card>
-          <Title>When do you want your insurance to end?</Title>
-          <SwiftUIButton style={styles.container} />
-          <Button text="Continue" onPress={close} />
+          {/* <Title>When do you want your insurance to end?</Title> */}
+          <CalenderContainer>
+            <SwiftUIDatePicker style={styles.container} />
+          </CalenderContainer>
+          <Button text="Pick end date" onPress={close} />
         </Card>
       </Wrapper>
     </Modal>

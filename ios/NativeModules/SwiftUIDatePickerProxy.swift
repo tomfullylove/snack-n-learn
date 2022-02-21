@@ -1,5 +1,5 @@
 //
-//  SwiftUIButtonProxy.swift
+//  SwiftUIDatePickerProxy.swift
 //  Veygo
 //
 //  Created by Tom Fullylove on 30/01/2022.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-@objcMembers class SwiftUIButtonProxy: NSObject {
-  private var vc = UIHostingController(rootView: SwiftUIButton())
+@objcMembers class SwiftUIDatePickerProxy: NSObject {
+  private var vc = UIHostingController(rootView: SwiftUIDatePicker())
   
   static let storage = NSMutableDictionary()
   
