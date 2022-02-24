@@ -4,7 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import colors from '@utils/colors';
 
-import {DashboardNavigator, QuoteNavigator} from '@navigation';
+import {DashboardNavigator, HomeNavigator} from '@navigation';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,10 +22,10 @@ const Navigator: React.FC = () => {
         headerShown: false,
       }}>
       <Tab.Screen
-        name="QuoteNavigator"
-        component={QuoteNavigator}
+        name="HomeTab"
+        component={HomeNavigator}
         options={{
-          tabBarLabel: 'Dashboard',
+          tabBarLabel: 'Home',
           tabBarIcon: ({color, size}) => (
             <Ionicons name="home-outline" color={color} size={size} />
           ),

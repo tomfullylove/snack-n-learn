@@ -41,7 +41,7 @@ const EndDateCard: React.FC = () => {
   const [showEndDateModal, toggleEndDateModal] = useState(false);
   return (
     <>
-      <Card>
+      <Card onPress={() => toggleEndDateModal(true)}>
         <Container>
           <TitleContainer>
             <Icon />

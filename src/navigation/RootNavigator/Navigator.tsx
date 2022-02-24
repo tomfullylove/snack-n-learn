@@ -2,7 +2,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
-import {TabNavigator} from '@navigation';
+import {TabNavigator, QuoteNavigator} from '@navigation';
 
 import {PersonalInfo, CarInfo} from '@components/modals';
 
@@ -13,6 +13,7 @@ const Navigator: React.FC = () => {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Tab" component={TabNavigator} />
+        <Stack.Screen name="Quote" component={QuoteNavigator} />
         <Stack.Group screenOptions={{presentation: 'modal'}}>
           <Stack.Screen name="PersonalInfo" component={PersonalInfo} />
           <Stack.Screen name="CarInfo" component={CarInfo} />
