@@ -37,7 +37,7 @@ const Card = Styled.Pressable<CardProps>`
   padding: 16px;
 
   shadow-color: ${({fill}) =>
-    fill ? colors.shadow.main : colors.shadow.background};
+    fill ? colors.shadow.success : colors.shadow.background};
   shadow-offset: 0px 2px;
   shadow-opacity: 1;
 

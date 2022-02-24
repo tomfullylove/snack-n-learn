@@ -17,5 +17,6 @@ export default {
   shadow: {
     background: 'rgba(0, 0, 0, 0.05)',
     main: 'rgba(54, 206, 206, 0.05)',
+    success: 'rgba(211, 255, 239, 0.05)',
   },
 };
