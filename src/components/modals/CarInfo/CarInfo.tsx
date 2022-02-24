@@ -70,7 +70,7 @@ const ContentContainer = Styled.View`
 
 const BottomContainer = Styled.View`
   display: flex;
-  padding: 0 24px;
+  padding: 0 24px 24px;
 `;
 
 const CarInfo: React.FC = () => {

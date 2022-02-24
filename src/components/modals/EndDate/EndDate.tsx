@@ -18,7 +18,7 @@ const Wrapper = Styled.View`
 
 const CalenderContainer = Styled.View`
   height: 390px;
-  margin: -20px 0 -30px;
+  margin: -20px 0 -20px;
 `;
 
 interface Props {

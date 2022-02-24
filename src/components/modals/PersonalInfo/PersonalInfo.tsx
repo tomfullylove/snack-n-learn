@@ -1,6 +1,9 @@
 import React from 'react';
+import {StyleSheet} from 'react-native';
 import Styled from 'styled-components/native';
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation, useIsFocused} from '@react-navigation/native';
+
+import {Camera, useCameraDevices} from 'react-native-vision-camera';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -66,11 +69,12 @@ const ButtonIcon = Styled(Ionicons).attrs({
 const ContentContainer = Styled.View`
   display: flex;
   flex-grow: 1;
+  margin: 0 24px 24px;
 `;
 
 const BottomContainer = Styled.View`
   display: flex;
-  padding: 0 24px;
+  padding: 0 24px 24px;
 `;
 
 const Spacer = Styled.View`
@@ -79,6 +83,10 @@ const Spacer = Styled.View`
 
 const PersonalInfo: React.FC = () => {
   const navigation = useNavigation();
+  const isFocused = useIsFocused();
+
+  const devices = useCameraDevices();
+  const device = devices.back;
   return (
     <Container>
       <TopContainer>
@@ -90,7 +98,11 @@ const PersonalInfo: React.FC = () => {
           <ButtonIcon />
         </ButtonContainer>
       </TopContainer>
-      <ContentContainer />
+      <ContentContainer>
+        {device && (
+          <Camera style={styles.camera} device={device} isActive={isFocused} />
+        )}
+      </ContentContainer>
       <BottomContainer>
         <Button text="Scan driving licence" />
         <Spacer />
@@ -99,5 +111,12 @@ const PersonalInfo: React.FC = () => {
     </Container>
   );
 };
+
+const styles = StyleSheet.create({
+  camera: {
+    flex: 1,
+    borderRadius: 8,
+  },
+});
 
 export default PersonalInfo;
