@@ -5881,6 +5881,11 @@ react-native-maps@^0.29.3:
   dependencies:
     "@types/geojson" "^7946.0.7"
 
+react-native-mlkit-ocr@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/react-native-mlkit-ocr/-/react-native-mlkit-ocr-0.2.3.tgz#2d6af84288ab9a79245c8f47e41d034ca8e4b085"
+  integrity sha512-cMsqR3xzLlDS9l/w4HHOiY9es14LGG2voIAOtl2JcUlB0kcSLYXKRJ2JohtQgVZE9DU/zMK/B2WIh7UDb38dRw==
+
 react-native-modal@^13.0.0:
   version "13.0.0"
   resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-13.0.0.tgz#b7117400cae8548e713eed760077dee44f78628e"
