@@ -4,6 +4,7 @@ import colors from '@utils/colors';
 
 interface Props {
   color?: string;
+  shadowColor?: string;
 }
 
 const Card = Styled.Pressable<Props>`
@@ -12,7 +13,7 @@ const Card = Styled.Pressable<Props>`
   background-color: ${({color}) => color || colors.background.main};
   padding: 24px;
 
-  shadow-color: ${colors.shadow.background};
+  shadow-color: ${({shadowColor}) => shadowColor || colors.shadow.background};
   shadow-offset: 0px 2px;
   shadow-opacity: 1;
 `;

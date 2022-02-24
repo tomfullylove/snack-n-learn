@@ -19,6 +19,8 @@ import {
 
 const Container = Styled.SafeAreaView`
   display: flex;
+  height: 100%;
+  background-color: ${colors.background.sub};
 `;
 
 const OptionsContainer = Styled.View`
@@ -73,7 +75,8 @@ const Spacer = Styled.View`
 
 const BottomContainer = Styled.View`
   display: flex;
-  padding: 0 24px;
+  flex-direction: row;
+  padding: 24px;
 `;
 
 const Screen: React.FC = () => {

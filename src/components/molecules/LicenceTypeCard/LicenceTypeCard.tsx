@@ -42,7 +42,8 @@ const LicenceTypeCard: React.FC = () => {
     <>
       <Card
         onPress={() => toggleLicenceTypeModal(true)}
-        color={colors.background.success}>
+        color={colors.background.success}
+        shadowColor={colors.shadow.main}>
         <Container>
           <TitleContainer>
             <Icon />
