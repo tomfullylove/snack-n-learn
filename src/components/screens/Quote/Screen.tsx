@@ -76,7 +76,11 @@ const Spacer = Styled.View`
 const BottomContainer = Styled.View`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 24px;
+`;
+
+const SectionInfo = Styled.View`
 `;
 
 const Screen: React.FC = () => {
@@ -127,7 +131,8 @@ const Screen: React.FC = () => {
         <PersonalInfoCard />
       </ContentContainer>
       <BottomContainer>
-        <Button text="Next" />
+        <SectionInfo />
+        <Button text="Pay" />
       </BottomContainer>
     </Container>
   );

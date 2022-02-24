@@ -12,8 +12,7 @@ const Container = Styled.Pressable`
   border-radius: 8px;
   background-color: ${colors.main}
   height: 40px;
-  width: 100%;
-
+  padding: 0 48px;
   shadow-color: ${colors.shadow.main};
   shadow-offset: 0px 2px;
   shadow-opacity: 1;

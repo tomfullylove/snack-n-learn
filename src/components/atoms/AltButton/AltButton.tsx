@@ -12,7 +12,7 @@ const Container = Styled.Pressable`
   border-radius: 8px;
   background-color: ${colors.background.alt}
   height: 40px;
-  width: 100%;
+  padding: 0 48px;
 `;
 
 const Text = Styled.Text`
