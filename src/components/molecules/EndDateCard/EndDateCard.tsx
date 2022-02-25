@@ -47,7 +47,7 @@ const EndDateCard: React.FC = () => {
             <Icon />
             <Title>End date</Title>
           </TitleContainer>
-          <Button text="Pick date" onPress={() => toggleEndDateModal(true)} />
+          <Button text="Select date" onPress={() => toggleEndDateModal(true)} />
         </Container>
       </Card>
       <EndDate

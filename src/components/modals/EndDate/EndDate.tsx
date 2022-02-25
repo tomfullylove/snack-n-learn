@@ -39,7 +39,7 @@ const EndDate: React.FC<Props> = ({show, close}) => {
           <CalenderContainer>
             <SwiftUIDatePicker style={styles.container} />
           </CalenderContainer>
-          <Button text="Pick end date" onPress={close} />
+          <Button text="Select date" onPress={close} />
         </Card>
       </Wrapper>
     </Modal>

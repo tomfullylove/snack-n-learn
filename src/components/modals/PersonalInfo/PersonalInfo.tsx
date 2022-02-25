@@ -114,10 +114,8 @@ const PersonalInfo: React.FC = () => {
     }
 
     const photo = await camera.current.takePhoto();
-    console.log(photo.path);
 
     const result = await MlkitOcr.detectFromFile(`${photo.path}`);
-    console.log(result);
 
     result.map((block) => {
       block.lines.map((line) => {

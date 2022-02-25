@@ -132,7 +132,7 @@ const Screen: React.FC = () => {
       </ContentContainer>
       <BottomContainer>
         <SectionInfo />
-        <Button text="Pay" />
+        <Button text="Next" />
       </BottomContainer>
     </Container>
   );
